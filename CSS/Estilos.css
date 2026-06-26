@@ -1,0 +1,441 @@
+/* ==============================
+   Hoja de estilos
+   Tema: Diseño de navegación
+   ============================== */
+
+/* ======================
+   HEADER
+====================== */
+
+.topbar{
+    background:#E9E6FA;
+    padding:15px 25px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    border-bottom:1px solid #D9D9E3;
+}
+
+/* Logo */
+
+.logo{
+    font-family:'Poppins',sans-serif;
+    font-size:54px;
+    font-weight:700;
+    color:#111111;
+}
+
+.logo span{
+    color:#6C4DD3;
+}
+
+/* Buscador */
+
+.buscador{
+    width:420px;
+    height:42px;
+
+    background:white;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 15px;
+
+    border-radius:6px;
+}
+
+.buscador i{
+    color:#666;
+    margin-right:10px;
+}
+
+.buscador input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-family:'Roboto',sans-serif;
+    font-size:14px;
+}
+
+/* Usuario */
+
+.usuario{
+    width:42px;
+    height:42px;
+
+    background:#D9D9E3;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#6C4DD3;
+    font-size:22px;
+}
+
+/* ======================
+   MENÚ
+====================== */
+
+.menu-categorias{
+    background:#E9E6FA;
+
+    padding:12px 20px;
+
+    display:flex;
+    gap:12px;
+
+    flex-wrap:wrap;
+}
+
+.item-menu{
+    text-decoration:none;
+
+    color:#111111;
+
+    border:1px solid #111111;
+
+    border-radius:30px;
+
+    padding:10px 18px;
+
+    font-size:13px;
+
+    font-family:'Poppins',sans-serif;
+
+    display:flex;
+    align-items:center;
+
+    gap:8px;
+
+    transition:.3s;
+}
+
+.item-menu:hover{
+    background:#6C4DD3;
+    color:white;
+    border-color:#6C4DD3;
+}
+
+.item-menu.activo{
+    background:#E9E6FA;
+    color:#6C4DD3;
+    border:1px solid #BFB7E8;
+}
+
+.item-menu i{
+    font-size:13px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .topbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .logo{
+        font-size:38px;
+    }
+
+    .buscador{
+        width:100%;
+    }
+
+    .menu-categorias{
+        justify-content:center;
+    }
+}
+
+
+/* Estilos generales */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Encabezado principal */
+header {
+    background-color: #8b1e3f;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #333333;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2 {
+    color: #111111;
+    border-bottom: 2px solid #6C4DD3;
+    padding-bottom: 5px;
+	text-align: center;
+}
+
+h3 {
+    color: #444444;
+}
+
+/* Párrafos */
+p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Cajas de información */
+.caja-info {
+    background-color: #FFFFFF;
+    border-left: 5px solid #6C4DD3;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Imágenes */
+img {
+	
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+    border-radius: 8px;
+	
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th {
+    background-color: #8b1e3f;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+/* Pie de página */
+/* FOOTER */
+
+.footer {
+    background-color: #E9E6FA;
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Logo */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-cuadro {
+    width: 42px;
+    height: 42px;
+    background-color: #6C4DD3;
+    color: white;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    margin: 0;
+    color: #111111;
+}
+
+.footer-logo span {
+    color: #6C4DD3;
+}
+
+/* Links */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #111111;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #6C4DD3;
+}
+
+/* Redes Sociales */
+
+.footer-social {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-social a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #000;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background-color: #6C4DD3;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+}
+
+/* Diseño adaptable para celular */
+@media screen and (max-width: 768px) {
+    main {
+        width: 92%;
+        padding: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+.btn-arriba {
+  position: fixed;
+  right: 24px;
+  bottom: 150px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #6C4DD3;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(108, 77, 211, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+.btn-arriba:hover {
+  background-color: #5738BE;
+  transform: translateY(-2px);
+}
+
+.btn-arriba.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

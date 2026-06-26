@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sin título</title>
+<link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
+	
+	<header class="topbar">
+
+    <div class="logo">
+        Wiki<span>Diseño</span>
+    </div>
+
+    <div class="buscador">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Buscar temas de diseño...">
+    </div>
+
+    <div class="usuario">
+        <i class="fas fa-user"></i>
+    </div>
+
+</header>
+
+<nav class="menu-categorias">
+
+    <a href="#" class="item-menu">
+        <i class="fas fa-user"></i>
+        Experiencia de usuario
+    </a>
+
+    <a href="#" class="item-menu">
+        <i class="fas fa-globe"></i>
+        Diseño web
+    </a>
+
+    <a href="#" class="item-menu">
+        <i class="far fa-lightbulb"></i>
+        Design thinking
+    </a>
+
+    <a href="#" class="item-menu">
+        <i class="fas fa-users"></i>
+        Diseño centrado en el usuario
+    </a>
+
+    <a href="#" class="item-menu">
+        <i class="fas fa-mouse-pointer"></i>
+        Diseño de interacción
+    </a>
+
+    <a href="#" class="item-menu activo">
+        <i class="fas fa-sitemap"></i>
+        Arquitectura de la información
+    </a>
+
+    <a href="#" class="item-menu">
+        <i class="far fa-dot-circle"></i>
+        Diseño de navegación
+    </a>
+
+    <a href="#" class="item-menu">
+        <i class="fas fa-palette"></i>
+        Diseño visual
+    </a>
+
+</nav>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+<h2><img src="Imagenes/Foco.png" width="67" height="69" alt=""/>¿Qué es el diseño de navegación?</h2>
+<img src="Imagenes/Diseño 1.jpg" alt=""/>
+	
+<div class="caja-info">El diseño de navegación es el proceso de organizar y estructurar los elementos de un sitio web, aplicación o sistema digital para que los usuarios puedan desplazarse fácilmente entre las diferentes páginas, secciones o contenidos.
+Su objetivo principal es que las personas encuentren la información que buscan de forma rápida, sencilla e intuitiva, mejorando la experiencia del usuario.</div>
+	
+<h2>Elementos clave del diseño de navegación</h2>
+	
+	<ul>
+	<li><strong>Menú principal:</strong> La barra deopciones principal,generalmente situada en la parte superior</li>
+	<li><strong>Migas de Pan (Breadcrumbs):</strong> Indican el recorrido realizado (por ejemplo, Inicio > Ropa > Hombre > Camisas)</li>
+	<li><strong>Enlaces Internos:</strong> Palabras dentro del texto que redirigen a otras páginas relacionadas</li>
+	<li><strong>Buscador: </strong> Una barra que permite encontrar contenido especitico al escribir palabrasclave.</li>
+	</ul>
+	
+	<div style="text-align: center;">
+	<video src="Videos/Video1.mp4" width="640" height="360" controls></video>
+	</div>
+	
+
+<button class="btn-arriba" id="btn-arriba" type="button" aria-label="Volver al inicio">
+  ↑
+</button>
+	
+<footer class="footer">
+    
+    <div class="footer-logo">
+        <div class="logo-cuadro">W</div>
+        <h2>Wiki<span>Diseño</span></h2>
+    </div>
+
+    <div class="footer-links">
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Aviso Legal</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <div class="footer-links">
+        <a href="#">Preguntas Frecuentes</a>
+        <a href="#">Sobre Nosotros</a>
+    </div>
+
+    <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+</footer>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">	
+	<script>
+  const botonArriba = document.getElementById("btn-arriba");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 350) {
+      botonArriba.classList.add("visible");
+    } else {
+      botonArriba.classList.remove("visible");
+    }
+  });
+
+  botonArriba.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+	
+	</body>
+</html>
